@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prime Check and Factors</title>
+</head>
+
+<body>
+
+    <p id="factors"></p>
+    <p id="primeCheck"></p>
+
+    <script>
+        function findFactors(num) {
+            let factors = [];
+            for (let i = 1; i <= num; i++) {
+                if (num % i === 0) {
+                    factors.push(i);
+                }
+            }
+            return factors;
+        }
+
+        function isPrime(num) {
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) {
+                    return false;
+                }
+            }
+            return num > 1;
+        }
+
+        // Example usage
+        var number = 7; // You can change this number to test other values
+        var factors = findFactors(number);
+        var primeCheck = isPrime(number);
+
+        document.getElementById("factors").innerHTML = "Factors of " + number + " are: " + factors.join(", ");
+        document.getElementById("primeCheck").innerHTML = number + " is " + (primeCheck ? "a Prime" : "not a Prime") + " number.";
+    </script>
+
+</body>
+
+</html>
