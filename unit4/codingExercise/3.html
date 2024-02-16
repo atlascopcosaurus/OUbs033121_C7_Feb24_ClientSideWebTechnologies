@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Push and Pop Demo</title>
+    <script>
+        function pushAndPopDemo() {
+            var animals = ['Dog', 'Cat', 'Rabbit'];
+
+            // Display original array
+            document.getElementById("originalArray").innerHTML = "Original array: " + animals.join(", ");
+
+            // Push operation: adding 'Horse' and 'Elephant'
+            animals.push('Horse', 'Elephant');
+            document.getElementById("afterPush").innerHTML = "After push operation: " + animals.join(", ");
+
+            // Pop operation: removing the last element
+            var poppedAnimal = animals.pop();
+            document.getElementById("afterPop").innerHTML = "After pop operation: " + animals.join(", ");
+            document.getElementById("poppedAnimal").innerHTML = "Popped animal: " + poppedAnimal;
+        }
+    </script>
+</head>
+
+<body onload="pushAndPopDemo()">
+    <p id="originalArray"></p>
+    <p id="afterPush"></p>
+    <p id="afterPop"></p>
+    <p id="poppedAnimal"></p>
+</body>
+
+</html>

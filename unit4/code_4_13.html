@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Array Methods</title>
+</head>
+
+<body>
+    <p> JavaScript Method "push()" add element at the end of an array</p>
+    <button onclick="pushFunction()">Click to add another element!</button>
+
+    <p id="demo"></p>
+
+    <script>
+        var animals = ["cats", "Dog", "Eleephant", "Horse"];
+        document.getElementById("demo").innerHTML = animals;
+
+        function pushFunction() {
+            animals.push("Lion");
+            document.getElementById("demo").innerHTML = animals;
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

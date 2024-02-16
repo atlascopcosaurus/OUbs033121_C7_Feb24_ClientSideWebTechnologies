@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Global ad Local Variables</title>
+</head>
+
+<body>
+    <p>In this example we can explain how local variables differ from global variables</p>
+
+    <h2> Local Variable when accessed globally
+    </h2>
+    <p id="demo"></p>
+
+    <h2> Local Variable when accessed locally
+    </h2>
+    <p id="demo1"></p>
+
+    <h2> Global Variable when accessed locally
+    </h2>
+    <p id="demo2"></p>
+
+    <h2> Global Variable when accessed globally
+    </h2>
+    <p id="demo3"></p>
+
+
+    <script>
+        var animal = "Lion" // Declaring & Initializing a character variable
+        myFunction();
+        document.getElementById("demo").innerHTML = "The type of fruit is " + typeof fruit;
+        document.getElementById("demo3").innerHTML = "The type of animal is " + typeof animal;
+
+        function myFunction() {
+            var fruit = "Apple"
+            document.getElementById("demo1").innerHTML = "The type of fruit is " + typeof fruit;
+            document.getElementById("demo2").innerHTML = "The type of animal is " + typeof animal;
+        }
+
+    </script>
+</body>
+
+</html>

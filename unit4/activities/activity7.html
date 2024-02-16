@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Strings</title>
+</head>
+
+<body>
+    <p>You can create a visual effect by inserting spaces in a string and displaying it repeatedly with more spaces in
+        the next lines.</p>
+    <p id="demo"></p>
+    <script>
+        var baseString = "AIOU Students";
+        var resultString = "";
+        var spaces = "";
+
+        for (var i = 0; i < 10; i++) {
+            spaces += "&nbsp;"; // Add a non-breaking space to the 'spaces' string
+            resultString += spaces + baseString + "<br>"; // Concatenate spaces, baseString, and a line break
+        }
+
+        document.getElementById("demo").innerHTML = resultString;
+    </script>
+</body>
+
+</html>

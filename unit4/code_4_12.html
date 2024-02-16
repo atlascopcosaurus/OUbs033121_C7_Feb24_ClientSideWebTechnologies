@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Array Methods</title>
+</head>
+
+<body>
+    <p>
+        JavaScript Method "pop()" removes the last element from an array.
+    </p>
+
+    <button onclick="popFunction()">Click to remove element!</button>
+
+    <p id="demo"></p>
+
+    <script>
+        var animals = ["cat", "Dog", "Elephant", "Horse"];
+        document.getElementById("demo").innerHTML = animals;
+
+        //Function to remove an elemnt from a web page
+        function popFunction() {
+            animals.pop(); //Calling of JavaScript built-in function
+            document.getElementById("demo").innerHTML = animals;
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

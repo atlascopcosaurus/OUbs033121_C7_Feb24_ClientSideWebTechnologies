@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Array Methods</title>
+</head>
+
+<body>
+    <p> JavaScript Method "push()" adds an element at the end of an array. This example also converts array elements to
+        uppercase and sorts them alphabetically.</p>
+    <button onclick="pushFunction()">Click to add more elements and sort!</button>
+
+    <p id="demo"></p>
+
+    <script>
+        var animals = ["cats", "Dog", "Elephant", "Horse"];
+        // Initial display with uppercase conversion and sorting
+        displayAnimals();
+
+        function pushFunction() {
+            // Pushing more elements into the array
+            animals.push("Lion", "Giraffe", "Bear");
+
+            // Convert array elements to uppercase and sort alphabetically
+            displayAnimals();
+        }
+
+        function displayAnimals() {
+            var uppercaseAnimals = animals.map(function (animal) {
+                return animal.toUpperCase();
+            });
+
+            // Sort the array in alphabetical order
+            uppercaseAnimals.sort();
+
+            // Display the updated array
+            document.getElementById("demo").innerHTML = uppercaseAnimals.join(", ");
+        }
+    </script>
+</body>
+
+</html>

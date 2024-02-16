@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Splice Example</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var fruits = ['Apple', 'Banana', 'Orange', 'Mango', 'Kiwi'];
+
+            // Display original array
+            document.body.innerHTML += "<p>Original array: " + fruits.join(', ') + "</p>";
+
+            // Remove 'Orange' and 'Mango'
+            fruits.splice(2, 2);
+
+            // Display array after removal
+            document.body.innerHTML += "<p>After removing Orange and Mango: " + fruits.join(', ') + "</p>";
+
+            // Add 'Pineapple' and 'Grapes' before 'Kiwi'
+            fruits.splice(2, 0, 'Pineapple', 'Grapes');
+
+            // Display array after adding
+            document.body.innerHTML += "<p>After adding Pineapple and Grapes: " + fruits.join(', ') + "</p>";
+
+            // Replace 'Banana' with 'Strawberry'
+            var bananaIndex = fruits.indexOf('Banana');
+            if (bananaIndex !== -1) {
+                fruits.splice(bananaIndex, 1, 'Strawberry');
+            }
+
+            // Display array after replacing
+            document.body.innerHTML += "<p>After replacing Banana with Strawberry: " + fruits.join(', ') + "</p>";
+        });
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

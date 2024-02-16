@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Functions</title>
+    <script>
+        function showSum() {
+            var number1 = parseInt(prompt("Enter the first number:"));
+            var number2 = parseInt(prompt("Enter the second number:"));
+            var sum = number1 + number2;
+            document.getElementById("result").innerHTML = "The sum is: " + sum;
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="showSum()">Click Me to Add Numbers!</button>
+
+    <p id="result">
+    </p>
+</body>
+
+</html>

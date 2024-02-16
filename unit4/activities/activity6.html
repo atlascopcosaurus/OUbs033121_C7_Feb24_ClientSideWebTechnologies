@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Global and Local Variables Example</title>
+</head>
+
+<body>
+    <p>Understanding the difference between local and global variables in JavaScript.</p>
+
+    <button onclick="incrementCounter()">Increment Counter</button>
+    <p id="globalCounter">Global Counter: 0</p>
+
+    <button onclick="calculateSquare()">Calculate Square</button>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <p id="calculationResult"></p>
+
+    <script>
+        var counter = 0; // Global variable
+
+        function incrementCounter() {
+            counter++; // Increment the global variable
+            document.getElementById("globalCounter").innerHTML = "Global Counter: " + counter;
+        }
+
+        function calculateSquare() {
+            var number = document.getElementById("numberInput").value; // Local variable
+            var square = number * number; // Another local variable
+            document.getElementById("calculationResult").innerHTML = "Square of " + number + " is " + square;
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- 
+In this example:
+
+    Global Counter: We have a global variable counter that keeps track of how many times the "Increment Counter" button is clicked. Each click calls the incrementCounter function, which increments the counter by 1 and updates the displayed count. This demonstrates how a global variable (counter) can be accessed and modified from within a function.
+    
+    Calculate Square: When the user enters a number and clicks the "Calculate Square" button, the calculateSquare function is called. This function reads the user input (considered a local variable since it's retrieved within the function), calculates its square (another local variable), and then displays the result. This shows how local variables are used within a function to perform calculations or store temporary data.
+
+This example further illustrates the distinction between global and local variables in JavaScript through interactive elements, providing a clear understanding of their scopes and behavior
+
+-->

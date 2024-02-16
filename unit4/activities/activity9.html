@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Array Methods</title>
+</head>
+
+<body>
+    <p>JavaScript Method "toString()" returns an array as a comma separated string.</p>
+    <p id="demo"></p>
+    <script>
+        // Declaring & Initialising an array list
+        var animals = ["cat", "Dog", "Elephant", "Horse"];
+
+        // Find the index of "cat" and "Horse" and remove them using splice()
+        var catIndex = animals.indexOf("cat"); // Finds the index of "cat"
+        if (catIndex !== -1) {
+            animals.splice(catIndex, 1); // Removes "cat" if it's found
+        }
+
+        var horseIndex = animals.indexOf("Horse"); // Finds the index of "Horse"
+        if (horseIndex !== -1) {
+            animals.splice(horseIndex, 1); // Removes "Horse" if it's found
+        }
+
+        // Display the updated array
+        document.getElementById("demo").innerHTML = animals.toString();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array to String Converter</title>
+    <script>
+        function convertArrayToString(arr) {
+            var resultString = arr.join(", "); // Converts the array to a string, separating elements with a comma and a space
+            return resultString;
+        }
+
+        function displayConvertedArray() {
+            var myArray = ["Apple", "Banana", "Orange", "Mango"];
+            var arrayAsString = convertArrayToString(myArray);
+            document.getElementById("arrayString").innerHTML = "Array as string: " + arrayAsString;
+        }
+    </script>
+</head>
+
+<body onload="displayConvertedArray()">
+    <p id="arrayString"></p>
+</body>
+
+</html>
