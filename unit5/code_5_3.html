@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Loops</title>
+</head>
+
+<body>
+    <h3>List of animals:</h3>
+    <p id="demo"></p>
+
+    <script>
+        var animals = ["Cat", "Dog", "Elephant", "Horse", "Mouse"];
+        var text = ""; // Initialising a charater variable with null value
+
+        for (var i = 0; i < animals.length; i++) {
+            text += animals[i] + "<br>";
+        }
+
+        // Name of each animal is stored in “text” sequentially using for-loop.
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+
+</html>

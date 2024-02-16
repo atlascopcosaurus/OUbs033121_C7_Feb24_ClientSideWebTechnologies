@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Loops</title>
+    <script>
+        function displayEvenNumbers() {
+            var number = 2; // Start from 2
+            var count = 0; // Initialize counter for even numbers
+
+            var result = ""; // To store the even numbers
+
+            do {
+                result += number + " "; // Append the even number to the result string
+                number += 2; // Increment by 2 to get the next even number
+                count++; // Increment the counter
+            } while (count < 10); // Check the condition
+
+            // Display the even numbers
+            document.getElementById("evenNumbers").innerHTML = result.trim();
+        }
+    </script>
+</head>
+
+<body onload="displayEvenNumbers()">
+    <h3>First Ten Even Numbers Starting from 2:</h3>
+    <p id="evenNumbers"></p>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Loops</title>
+</head>
+
+<body>
+    <h3>List of animals : </h3>
+    <p id="demo"></p>
+
+    <script>
+        var animals = ["Cat", "Dog", "Elephant", "Horse", "Mouse"];
+        var text = "";
+        var i = 0;
+
+        while (i < animals.length) {
+            text += animals[i] + "<br>";
+
+            i++;
+        }
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Conditions</title>
+</head>
+
+<body>
+    <h3>Results :</h3>
+    <p id="demo"></p>
+
+    <script>
+        var marks = 40; // You can change this value to test different outcomes
+
+        if (marks >= 90) {
+            document.getElementById("demo").innerHTML = "Grade: A+";
+        } else if (marks >= 80) {
+            document.getElementById("demo").innerHTML = "Grade: A";
+        } else if (marks >= 70) {
+            document.getElementById("demo").innerHTML = "Grade: B";
+        } else if (marks >= 60) {
+            document.getElementById("demo").innerHTML = "Grade: C";
+        } else if (marks >= 50) {
+            document.getElementById("demo").innerHTML = "Grade: D";
+        } else {
+            document.getElementById("demo").innerHTML = "Fail";
+        }
+    </script>
+</body>
+
+</html>
